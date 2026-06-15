@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f3c88, #5c7cfa);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      background: #ddd;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #1f3c88;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #1f3c88;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    .card {
+      background: #f8f9ff;
+      padding: 20px;
+      border-radius: 14px;
+      margin: 15px 0;
+      border-left: 5px solid #5c7cfa;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e7ecff;
+      color: #1f3c88;
+      padding: 7px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
+      section {
+        margin: 25px 15px;
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
+    <h1>박수인</h1>
+    <p>College of Liberal Studies Student</p>
+    <p>Interested in AI, software development, and human-centered technology.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+    <a href="#ai">AI Usage</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <strong>박수인</strong>. I am interested in computer science,
+      artificial intelligence, and building useful digital tools. I enjoy learning
+      programming concepts and applying them to real projects.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Activities</h2>
+
+    <div class="card">
+      <h3>OOP Programming Project</h3>
+      <p>
+        I practiced object-oriented programming concepts such as classes,
+        inheritance, polymorphism, and exception handling through Java and C++ assignments.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Webpage Project</h3>
+      <p>
+        I created this personal website using HTML and CSS, and deployed it through
+        GitHub Pages.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Basketball Club Activity</h3>
+      <p>
+        I participate in basketball club activities and have experience organizing
+        team-related tasks and communication.
+      </p>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV / Resume</h2>
+
+    <h3>Education</h3>
+    <p>Seoul National University</p>
+
+    <h3>Skills</h3>
+    <div class="skills">
+      <span>Java</span>
+      <span>C++</span>
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>GitHub</span>
+    </div>
+
+    <h3>Experience</h3>
+    <p>
+      Programming labs and assignments involving Java basics, collections,
+      exception handling, C++ basics, and object-oriented programming.
+    </p>
+
+    <p>
+      <a href="assets/cv.pdf" target="_blank">Download my CV</a>
+    </p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses I Plan to Take</h2>
+    <ul>
+      <li>Data Structures</li>
+      <li>Algorithms</li>
+      <li>Artificial Intelligence</li>
+      <li>Computer Systems</li>
+      <li>Human-Computer Interaction</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: godrachel@snu.ac.kr</p>
+    <p>GitHub: <a href="https://github.com/godrachel-ops" target="_blank">github.com/godrachel-ops</a></p>
+  </section>
+
+  <section id="ai">
+    <h2>AI Usage</h2>
+    <p><strong>Tool:</strong> ChatGPT</p>
+    <p>
+      <strong>Prompt:</strong> Build a simple responsive personal website for GitHub Pages.
+      Include About Me, Projects, Contact, CV, planned courses, and AI Usage sections.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 박수인. Built with HTML, CSS, and GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
